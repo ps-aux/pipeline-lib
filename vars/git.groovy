@@ -1,8 +1,8 @@
 class CommitInfo implements Serializable {
 
-    String author
-    String message
-    String time
+    public String author
+    public String message
+    public String time
 
 }
 
@@ -12,6 +12,7 @@ def commitInfo () {
     c.message = gitInfo('%s')
     c.time = gitInfo('%cr')
 
+    echo "Returning ${commit}"
     return c
 }
 
