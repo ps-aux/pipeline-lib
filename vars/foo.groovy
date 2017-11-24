@@ -4,6 +4,10 @@ def foo (){
     echo 'Fooooooooooo'
 }
 
+def baz () {
+    return "baaaaaz"
+}
+
 def commitInfo () {
     def c = new LinkedHashMap();
     c.author = gitInfo('%an')
