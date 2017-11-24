@@ -1,5 +1,13 @@
+class CommitInfo {
+
+    String author
+    String message
+    String time
+
+}
+
 def commitInfo () {
-    def c = new Expando()
+    def c = new CommitInfo()
     c.author = gitInfo('%an')
     c.message = gitInfo('%s')
     c.time = gitInfo('%cr')
