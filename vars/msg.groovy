@@ -1,3 +1,4 @@
 def failed () {
-    return "failed" + git.commitInfo().author
+    def commit = git.commitInfo()
+    return "failed bcs of" +  commit.author
 }
