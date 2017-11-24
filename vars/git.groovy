@@ -1,13 +1,6 @@
-class CommitInfo implements Serializable {
-
-    public String author
-    public String message
-    public String time
-
-}
 
 def commitInfo () {
-    def c = new CommitInfo()
+    def c = [:]
     c.author = gitInfo('%an')
     c.message = gitInfo('%s')
     c.time = gitInfo('%cr')
