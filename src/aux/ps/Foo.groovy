@@ -1,3 +1,5 @@
+package aux.ps
+
 def foo (){
     echo 'Fooooooooooo'
 }
