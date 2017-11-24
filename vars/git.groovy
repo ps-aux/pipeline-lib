@@ -12,7 +12,6 @@ def commitInfo () {
     c.message = gitInfo('%s')
     c.time = gitInfo('%cr')
 
-    echo "Returning ${commit}"
     return c
 }
 
