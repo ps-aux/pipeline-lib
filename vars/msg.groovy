@@ -6,5 +6,5 @@ def failed () {
                         | ${commit.time}
                          """.stripMargin()
 
-    return "Build *<${currentBuild.absoluteUrl}|${currentBuild.fullDisplayName}>* failed \n" + commitText
+    return "*<${currentBuild.absoluteUrl}|${currentBuild.fullDisplayName}>* build failed \n" + commitText
 }
