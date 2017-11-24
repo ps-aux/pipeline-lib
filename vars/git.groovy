@@ -1,4 +1,4 @@
-class CommitInfo {
+class CommitInfo implements Serializable {
 
     String author
     String message
